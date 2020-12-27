@@ -128,7 +128,7 @@ class Enemy {
     }
     draw() {
         let img = new Image();
-        img.src = "../images/enemy.png
+        img.src = "../images/enemy.png"
         c.drawImage(img, this.x, this.y, 60, 60);
     }
     upadate() {
