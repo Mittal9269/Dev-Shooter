@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruction</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: url("./images/backgound.jpg");
+            color: white;
+            overflow: hidden;
+        }
+
+        #pause {
+            font-size: 15px;
+            padding: 5px;
+            border: 2px solid white;
+        }
+
+        .points {
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid rgb(58, 55, 55); */
+            font-size: 20px;
+            width: 80%;
+            align-items: center;
+            margin: 0 10%;
+        }
+
+        ul {
+            list-style: none;
+            color: white;
+            margin: 20% 30%;
+        }
+
+        ul li::before {
+            content: "\2022";
+            /* Add content: \2022 is the CSS Code/unicode for a bullet */
+            color: white;
+            /* Change the color */
+            font-weight: bold;
+            /* If you want it to be bold */
+            display: inline-block;
+            /* Needed to add space between the bullet and the text */
+            width: 1em;
+            /* Also needed for space (tweak if needed) */
+            margin-left: -1em;
+            /* Also needed for space (tweak if needed) */
+        }
+
+    </style>
+</head>
+
+<body>
+    <button onclick="paused()" class="fixed text-white text-sm ml-2 mt-10 select-none" id="pause">Back</button>
+    <div class="points">
+        <ul>
+            <li>To move click up down left right arrow</li>
+            <br>
+            <li>To pause click on the pause button or press p key</li>
+            <br>
+            <li>Get diamond to icrease score to plus 40</li>
+            <br>
+            <li>Get clock to slow down the enemy</li>
+            <br>
+            <li>save yourself from astroid</li>
+        </ul>
+    </div>
+</body>
+<script>
+    function paused() {
+        location.replace("index.html");
+    }
+</script>
+
+</html>
