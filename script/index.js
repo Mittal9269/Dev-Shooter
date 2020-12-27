@@ -127,7 +127,8 @@ class Enemy {
         this.velocity = velocity;
     }
     draw() {
-        let img = arr_image[0];
+        let img = new Image();
+        img.src = "../images/enemy.png
         c.drawImage(img, this.x, this.y, 60, 60);
     }
     upadate() {
